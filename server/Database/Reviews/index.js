@@ -33,4 +33,4 @@ const ReviewSchema = new mongoose.Schema(
         timestamps:true,
     },    
 );
-export const FoodModel = mongoose.model('Reviews','ReviewSchema');
+export const ReviewModel = mongoose.model('Reviews',ReviewSchema);
