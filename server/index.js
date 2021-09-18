@@ -23,7 +23,7 @@ zomato.get("/",(req,res) => {
 
 zomato.use("/auth", Auth);
 
-zomato.listen(3000, () => 
+zomato.listen(7000, () => 
     ConnectDB()
     .then(() => console.log("Server is up and running"))
     .catch(  () => console.log("Server is running but database connection failed"))
