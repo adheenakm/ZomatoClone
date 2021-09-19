@@ -5,7 +5,7 @@ const FoodSchema = new mongoose.Schema(
         name: {type: String, required: true},
         description: {type: String, required: true},
         isVeg: {type: Boolean, required: true},
-        isContainsEgg: {type: Booolean, required: true},
+        isContainsEgg: {type: Boolean, required: true},
         category: {type: String, required: true},
         photos:
         {
@@ -16,13 +16,13 @@ const FoodSchema = new mongoose.Schema(
         addOns:
         [
             {
-                tyoe: mongoose.Types.ObjectId,
+                type: mongoose.Types.ObjectId,
                 ref: 'Foods',
-            }
+            },
         ],
         restaurant: 
         {
-            tyoe: mongoose.Types.ObjectId,
+            type: mongoose.Types.ObjectId,
             ref: 'Restaurants',
             requiredd: true,
         },
